@@ -55,13 +55,13 @@ var FriendsArray = [];
 function FriendsList() {
     for (var i = 0; i < 3; i++) {
         FriendsArray.push(prompt('Enter the name of your best friend # ' + (i + 1)));
+       
     }
-
-    document.getElementById("requirementFive").innerHTML = 'Your friends names are ' + FriendsArray.join(',')
+    const last = FriendsArray[FriendsArray.length - 1];
+    document.getElementById("requirementFive").innerHTML = 'Your friends names are ' + FriendsArray.join(',') + ' and ' + last;
 }
 
 FriendsList();
 
-document.getElementById("requirementSix").innerHTML = 
-"a=b,c:d".split('=').join(',').split(':').join(' and ').split(',')
+
 
